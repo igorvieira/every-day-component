@@ -1,0 +1,78 @@
+.container-radio {
+  background-color: cadetblue;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  border: 3px solid #023d3f;
+  border-radius: 16px;
+}
+
+.header {
+  border-bottom: 1px solid cornsilk;
+  padding-bottom: 10px;
+}
+
+.title {
+  font-size: 34px;
+  color: aliceblue;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: cornsilk;
+}
+
+.list {
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid cornsilk;
+  padding-bottom: 10px;
+}
+
+.list li {
+  list-style: none;
+  color: aliceblue;
+}
+
+.option {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.option input {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  transition: 0.2s;
+  outline: none;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.option input:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: cadetblue;
+  transition: opacity 0.2s;
+  opacity: 0;
+  position: absolute;
+}
+
+.option input:checked {
+  background-color: white;
+}
+
+.option input:checked:before {
+  opacity: 1;
+}
