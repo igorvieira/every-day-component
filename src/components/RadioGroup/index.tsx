@@ -48,7 +48,7 @@ const RadioGroup = ({ title, subtitle, options }: RadioGroupProps) => {
       </ul>
 
       <div className='action'>
-          <Button label='Submit' onClick={handleClicked}/>
+          <Button label='Submit' onClick={handleClicked} isLarge/>
       </div>
     </div>
   )
