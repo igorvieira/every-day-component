@@ -31,7 +31,7 @@ const RadioGroup = ({ title, subtitle, options }: RadioGroupProps) => {
 
       <ul className='list'>
         {options.map((option) => (
-          <li>
+          <li key={option.value}>
             <div className='option'>
               <input
                 type='radio'
