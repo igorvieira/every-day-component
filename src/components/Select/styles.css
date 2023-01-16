@@ -1,0 +1,41 @@
+
+.select {
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 16px;
+  color: #fff;
+  background: rebeccapurple;
+  background-image: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.select::-ms-expand {
+  display: none;
+}
+
+.select-content {
+  position: relative;
+  display: flex;
+  height: 48px;
+}
+
+.select-content::after {
+  content: '\25BC';
+  position: absolute;
+  color: #fff;
+  top: 1px;
+  right: 1px;
+  pointer-events: none;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: rosybrown;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
