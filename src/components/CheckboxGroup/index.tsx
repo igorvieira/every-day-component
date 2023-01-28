@@ -32,20 +32,19 @@ const Checkbox = ({ title, subtitle, options }: CheckboxProps) => {
     console.log(selected)
   }
 
-  return  (
-    <div className='container-checkbox'>
-
-      <div className='header'>
-        <div className='title'>{title}</div>
-        <div className='subtitle'>{subtitle}</div>
+  return (
+    <div className="container-checkbox">
+      <div className="header">
+        <div className="title">{title}</div>
+        <div className="subtitle">{subtitle}</div>
       </div>
 
-      <ul className='list'>
+      <ul className="list">
         {options.map((option) => (
           <li key={option.value}>
-            <div className='checkbox'>
+            <div className="checkbox">
               <input
-                type='checkbox'
+                type="checkbox"
                 checked={isCheked(option)}
                 id={option.value}
                 name={option.value}
@@ -58,8 +57,8 @@ const Checkbox = ({ title, subtitle, options }: CheckboxProps) => {
         ))}
       </ul>
 
-      <div className='action'>
-          <Button label='Submit' onClick={handleSubmit}  isLarge/>
+      <div className="action">
+        <Button label="Submit" onClick={handleSubmit} isLarge />
       </div>
     </div>
   )
